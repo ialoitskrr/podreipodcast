@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --cor0: #000000;
+    --cor1: #030f3b;
+    --cor2: #051a66;
+    --cor3: #09289A;
+    --cor4: #2442BC;
+    --cor5: #2F4CD4;
+    --cor6: #6b7de0;
+    --cor7: #ffc209;
+    --cor8: #d48d0a;
+    --cor9: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navgation {
+    background-color: #000000;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banner {
+    display: flex;
+    background: #010514da url(../imagens/logo-completa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 60vh;
+    margin-top: 103px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.titulo {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.social-podrei {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-align: center;
+    color: white;
+    margin: 5rem auto 1rem auto;
+    gap: 1rem;
+}
+
+.social-lista {
+    display: flex;
+    gap: 2rem;
+}

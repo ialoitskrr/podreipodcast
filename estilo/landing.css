@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
     --cor0: #000000;
     --cor1: #030f3b;
@@ -24,7 +26,7 @@
 
 body {
     background-color: var(--cor3);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .navigation {
@@ -34,7 +36,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.774);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.575);
     width: 100vw;
 }
 
@@ -105,10 +107,14 @@ main {
     max-width: 35rem;
 }
 
-.meio-txt h2 {
+.meio-txt h2 a {
     color: var(--cor8);
     font-size: 2.5rem;
     text-decoration: underline;
+}
+
+.meio-txt h2 a:hover {
+    color: var(--cor7);
 }
 
 .meio-txt h1 {
@@ -123,7 +129,7 @@ main {
     margin-bottom: 3rem;
 }
 
-.meio-txt a {
+.land-btn {
     color: var(--cor2);
     background: var(--cor7);
     padding: 10px 30px;
@@ -134,7 +140,7 @@ main {
     transition: all 0.3s;
 }
 
-.meio-txt a:hover {
+.land-btn:hover {
     color: var(--cor2);
     background: var(--cor8);
     text-decoration: underline;

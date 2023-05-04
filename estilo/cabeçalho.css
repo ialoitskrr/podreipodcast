@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --cor0: #000000;
+    --cor1: #030f3b;
+    --cor2: #051a66;
+    --cor3: #09289A;
+    --cor4: #2442BC;
+    --cor5: #2F4CD4;
+    --cor6: #445EEF;
+    --cor7: #ffc209;
+    --cor8: #d48d0a;
+    --cor9: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--cor3);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    position: fixed;
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.575);
+    width: 100vw;
+}
+
+.navigation .logo img {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navigation ul li a {
+    color: var(--cor7);
+    font-weight: bold;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    color: var(--cor8);
+    background-color: var(--cor1);
+    text-decoration: underline;
+    padding: 8px 12px;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .barras {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--cor8);
+    margin: 5px auto;
+}
+
+.menu .barras:nth-child(1),
+.menu .barras:nth-child(3){
+    background: var(--cor7);
+}
+/* MEDIA */
+    @media (max-width:890px) {
+        .navigation {
+            padding: 18px 20px;
+        }
+        .menu {
+            display: block;
+        }
+        .menu.ativo .barras:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .menu.ativo .barras:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu.ativo .barras:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        
+        .nav-menu {
+            position: fixed;
+            right: -100%;
+            top: 70px;
+            width: 50%;
+            height: 100vh;
+            flex-direction: column;
+            background: var(--cor2);
+            gap: -10px;
+            transition: 0.3s;
+        }
+        .nav-menu.ativo{
+            right: 0;
+        }
+    }
+
+    /* FECHA MEDIA */
