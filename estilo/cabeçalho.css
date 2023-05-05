@@ -136,11 +136,11 @@ body {
         }
         .navigation ul li {
             display: flex;
-            width: 24vw;
+            width: 48vw;
             justify-content: center;
+            text-align: center;
         }
         .navigation ul li:hover {
-            width: 48vw;
             color: var(--cor8);
             background-color: var(--cor2); 
             padding: 8px 0;       
