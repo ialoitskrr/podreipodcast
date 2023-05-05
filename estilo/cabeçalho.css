@@ -57,10 +57,12 @@ body {
     transition: all 0.3s;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 
 .navigation ul li a {
+    text-align: center;
     display: block;
     color: var(--cor7);
     font-weight: bold;
