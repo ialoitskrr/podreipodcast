@@ -25,13 +25,13 @@
 
 
 body {
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .navigation {
     position: fixed;
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,18 +51,33 @@ body {
     gap: 3rem;
 }
 
-.navigation ul li a {
+.navigation ul li {
     color: var(--cor7);
     font-weight: bold;
     transition: all 0.3s;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.navigation ul li a:hover {
-    color: var(--cor8);
-    background-color: var(--cor1);
-    text-decoration: underline;
-    padding: 8px 12px;
+
+.navigation ul li a {
+    display: block;
+    color: var(--cor7);
+    font-weight: bold;
+}
+
+.navigation ul li a::after {
+    content: "";
+    background-color: var(--cor7);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover::after {
+    width: 100%;
 }
 
 .menu {
@@ -110,12 +125,23 @@ body {
             width: 50%;
             height: 100vh;
             flex-direction: column;
-            background: var(--cor2);
+            background: var(--cor3);
             gap: -10px;
             transition: 0.3s;
         }
         .nav-menu.ativo{
             right: 0;
+        }
+        .navigation ul li {
+            display: flex;
+            width: 24vw;
+            justify-content: center;
+        }
+        .navigation ul li:hover {
+            width: 48vw;
+            color: var(--cor8);
+            background-color: var(--cor2); 
+            padding: 8px 0;       
         }
     }
 
