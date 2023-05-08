@@ -28,7 +28,249 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-@media(min-width:890px) {
+
+@media (max-width:600px) {
+    .landingpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        background: #020a27bb url(../imagens/logo-menor.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .meio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 100vh;
+        flex-direction: column;
+    }
+
+    .meio-txt {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding:5vh 10vw;
+        color: white;
+    }
+
+    .conteudo-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .meio-txt h3 {
+        color: var(--cor8);
+    }
+
+    .land-btn{
+        padding: 10px 10vw;
+        background-color: var(--cor7);
+        text-align: center;
+        border-radius: 10px;       
+        font-weight: 900;
+        color: var(--cor3);
+        transition: 0.5s;
+    }
+
+    .land-btn:hover {
+        background-color: var(--cor8);
+        color: var(--cor1);
+        font-size: 1.5em;
+    }
+
+    .meio-img {
+        display: flex;
+        width: 30vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meio-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+}
+    /* tablets */
+@media (min-width:600px) and (max-width:780px) {
+    .landingpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        background: #020a27bb url(../imagens/logo-menor.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+    .meio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 90vh;
+        flex-direction: column;
+        padding-bottom: 9vh;
+        gap: 10px;
+    }
+
+     .meio-txt {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .conteudo-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .meio-txt h3 {
+        color: var(--cor8);
+    }
+
+    .land-btn{
+        padding: 10px 30px;
+        color: var(--cor3);
+        background-color: var(--cor7);
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 900;
+        transition: 0.5s;
+    }
+
+    .land-btn:hover {
+        background-color: var(--cor8);
+        color: var(--cor1);
+        font-size: 1.5em;
+    }
+
+    .meio-img {
+        display: flex;
+        width: 30vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meio-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+
+}
+
+@media (min-width:780px) and (max-width:1315px) {
+    .landingpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        background: #020a27bb url(../imagens/logo-menor.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .meio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 90vw;
+        max-height: 90vh;
+        padding-bottom: 10vh;
+    }
+
+    .meio-txt {
+        display: flex;
+        width: 50vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    .conteudo-txt h3 {
+        font-size: 2rem;
+        color: var(--cor8);
+        font-weight: bold;
+    }
+
+    .conteudo-txt h1 {
+        font-size: 3rem;
+        color: white;
+        font-weight: 900;
+    }
+
+    .conteudo-txt p {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    .land-btn {
+        background-color: var(--cor7);
+        font-size: 1.5rem;
+        padding: 0.7rem 3rem;
+        border-radius: 10px;
+        font-weight: 900;
+        color: var(--cor3);
+        transition: 0.5s;
+    }
+
+    .land-btn:hover {
+        background-color: var(--cor8);
+        color: var(--cor1);
+        font-size: 2rem;
+    }
+
+    .meio-img {
+        display: flex;
+        width: 50vw;
+        height: auto;
+        align-items: center;
+    }
+
+    .meio-img img {
+        max-width: 380px;
+        border-radius: 10%;
+    }
+
+
+}
+
+
+@media(min-width:1315px) {
     .landingpage {
         display: flex;
         flex-direction: column;
@@ -104,79 +346,6 @@ body {
 
     .meio-img img {
         max-width: 380px;
-        border-radius: 10%;
-    }
-}
-
-@media(max-width:890px) {
-    .landingpage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        max-width: 100%;
-        max-height: 100%;
-        background: #020a27bb url(../imagens/logo-menor.jpeg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode: darken;
-    }
-
-    .meio-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100vw;
-        max-height: 100vh;
-        flex-direction: column;
-    }
-
-    .meio-txt {
-        display: flex;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        padding:5vh 10vw;
-        color: white;
-    }
-
-    .conteudo-txt {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .meio-txt h3 {
-        color: var(--cor8);
-    }
-
-    .land-btn{
-        padding: 10px 10vw;
-        background-color: var(--cor7);
-        text-align: center;
-        border-radius: 10%;
-    }
-
-    .land-btn:hover {
-        background-color: var(--cor8);
-        color: var(--cor1);
-        font-size: 1.5em;
-    }
-
-    .meio-img {
-        display: flex;
-        width: 30vw;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .meio-img img {
-        max-width: 100%;
-        height: auto;
         border-radius: 10%;
     }
 }
